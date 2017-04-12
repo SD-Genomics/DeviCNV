@@ -5,17 +5,17 @@ Detection and Visualization of Exon-Level Copy Number Variants in Targeted Next 
 DeviCNV runs on Python 2.7 and R 3.2.0.
 
 # Python dependencies
-sys
-intervaltree
-intervaltree_bio
-numpy
-operator
-random
-pysam
-pyvcf
-scipy
+- sys
+- intervaltree
+- intervaltree_bio
+- numpy
+- operator
+- random
+- pysam
+- pyvcf
+- scipy
 
 # R dependencies
-ggplot2
-PSCBS
+- ggplot2
+- PSCBS
 
