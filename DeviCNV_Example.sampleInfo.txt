@@ -1,0 +1,11 @@
+Sample	Sex
+GM14603_Example	Female
+GM14734_Example	Male
+GM17433_Example	Male
+GM23221_Example	Male
+GM23431_Example	Female
+GM23891_Example	Male
+GM24007_Example	Female
+NA00006_Example	Female
+NA00852_Example	Male
+NA01741_Example	Male

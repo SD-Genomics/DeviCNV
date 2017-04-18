@@ -1,0 +1,6 @@
+Attribute	Description	Default parameter setting	delFilter	dupFilter
+AmpCntInRegion	How many signals support the CNV candidate?	1 point for กร 2	>=2	>=2
+AverageOfReadDepthRatios	How strong is the signal supporting the candidate?	If deletion, 1 point for < 0.65; If duplication, 1 point for > 1.35	<0.65	>1.35
+STDOfReadDepthRatios	How stable are the signals supporting the candidate?	1 point for < 0.25	<0.25	<0.25
+AverageOfCIs	How small are the confidence intervals of the signals supporting the candidate CNV?	1 point for < 0.3	<0.3	<0.3
+AverageOfR2vals	How reliable is the model that generated the signals that support the candidate CNV?	1 point for กร0.8	>=0.8	>=0.8
