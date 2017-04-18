@@ -20,5 +20,6 @@ DeviCNV runs on Python 2.7 and R 3.2.0.
 - PSCBS
 
 # Documentation
- PDF documentation is included in the package.
+ PDF documentation is included in the package. 
+ - DeviCNV1.0 Manual20170418.pdf
  
