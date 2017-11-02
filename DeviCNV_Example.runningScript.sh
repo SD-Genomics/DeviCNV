@@ -5,7 +5,7 @@ module load R
 ### Calculate Read Depth for each amps #####################################################################################
 run_calculateReadDepthOfAmp=true
 run_mergeReadDepthStatistics=true
-### Caculate read Depth ratio ###############################################################################################
+## Caculate read Depth ratio ###############################################################################################
 run_chrXNormalizeReadsDepth=true
 run_filterLowQualSample=true
 run_buildLinearRegression=true
@@ -17,19 +17,19 @@ run_scoreCNV=true
 
 ##############################################################################################################################
 txtdir=./
-export inSampleInfoTxt=${txtdir}/DeviCNV_Example.sampleInfo.txt  ### A txt file that contains sample¡¯s sex information.
+export inSampleInfoTxt=${txtdir}/DeviCNV_Example.sampleInfo.txt  ### A txt file that contains sampleâ€™s sex information.
 export inAmpliconTxt=${txtdir}/DeviCNV_Example.probeInformation.txt  ### A txt file that contains the genomic position and pool information about target capture probes.
 export inScoringThTxt=${txtdir}/DeviCNV_scoringSystemThresholds.txt  ### A txt file that contains thresholds for DeviCNV's scoring system.
 export inBamDir=./ExampleBams/  ### A directory that contains input bam files.
-export codedir=./Code/  ### A directory that contains code files.
+export codedir=./Code_v1.5/  ### A directory that contains code files.
 
-export outdir=./ExampleOutputs/  ### A name of your project directory.
+export outdir=./ExampleOutputs_v1.5/  ### A name of your project directory.
 export batchTag=Example ### A name of input batch of your project.
 export datType="HYB"  ### "HYB" or "PCR".
-export dedupOp=true   ### "true" or "false". "true" is recommended.
+export dedupOp=true   ### "true" or "false". "true" is recommended. 
 export PoolList="Pool1" ### "Pool1,Pool2,Pool3" if there are 3 pools.
-export MQList="MQ0,MQ20" ### "MQ0" is recommended.
-export dupdelList="1.2_0.8" ### "1.2_0.8,1.3_0.7". "1.2_0.8" is recommended. "1.2" is for duplication and "0.8" is for deletion.
+export MQList="MQ0,MQ20" ### "MQ0" or "MQ20" is recommended.
+export dupdelList="1.1_0.9,1.3_0.7" ### "1.2_0.8,1.3_0.7". "1.3_0.7" is recommended. "1.3" is for duplication and "0.7" is for deletion.
 
 #### make out directory #######################################################################################################
 export readDepthDir=${outdir}/01.readDepthPerAmplicon/
