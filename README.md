@@ -19,6 +19,11 @@ DeviCNV runs on Python 2.7 and R 3.2.0.
 - ggplot2
 - PSCBS
 
+# Installation
+To install DeviCNV, simply download 9 scripts in “Code” directory.
+
 # Documentation
  PDF documentation is included in the package. 
  - DeviCNV1.0 Manual20170418.pdf
+
+
