@@ -24,6 +24,6 @@ To install DeviCNV, simply download 9 scripts in “Code” directory.
 
 # Documentation
  PDF documentation is included in the package. 
- - DeviCNV1.0 Manual20170418.pdf
+ - DeviCNV1.5 Manual20171101.pdf
 
 
