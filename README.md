@@ -30,4 +30,4 @@ To install DeviCNV, simply download 9 scripts in “Code” directory.
 We uploaded DeviCNV_v1.5.1 in 26/06/2019
 We fixed some bugs in code.
 1. Delete codes for running with Slurm Workload Manager in "DeviCNV_Example.runningScript.sh"
-2. Fix codes for selecting large CNV candidates in "python.scoreCNV.py"
+2. Fix codes for selecting large segments in "python.scoreCNV.py"
