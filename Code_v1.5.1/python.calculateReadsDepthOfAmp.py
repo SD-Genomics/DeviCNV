@@ -177,7 +177,7 @@ def MapReadinBamPCR(inBamFile, ampliconDic, ampTree, dedupOp, MQList):
             if(read.is_duplicate):
                 if(dedupOp=="true"):
                     continue
-            overlapAmpTreeList=ampTree[inBam.getrname(read.rname).replace("chr","")].search(read.pos+1, read.pos+read.alen+1) ## [start, end)
+            overlapAmpTreeList=ampTree[inBam.getrname(read.rname).replace("chr","")].overlap(read.pos+1, read.pos+read.alen+1) ## [start, end)
             if(len(overlapAmpTreeList)==0):
                 pass
             else:
@@ -242,7 +242,7 @@ def MapReadinBamHYB(inBamFile, ampliconDic, ampTree, dedupOp, MQList):
             if(read.is_duplicate):
                 if(dedupOp=="true"):
                     continue
-            overlapAmpTreeList=ampTree[inBam.getrname(read.rname).replace("chr","")].search(read.pos+1, read.pos+read.alen+1) ## [start, end)
+            overlapAmpTreeList=ampTree[inBam.getrname(read.rname).replace("chr","")].overlap(read.pos+1, read.pos+read.alen+1) ## [start, end)
             if(len(overlapAmpTreeList)==0):
                 pass
             else:          
