@@ -137,20 +137,20 @@ class GenePerSample:
         #### UnifiedRegions ##############################
         UnifiedRegion={}
         ID=1
-        segmentList=CBSTree[self.chrom].search(self.start, self.end+1) 
+        segmentList=CBSTree[self.chrom].overlap(self.start, self.end+1) 
         segmentList=sorted(segmentList,key=itemgetter(1))
         for segment in segmentList:
           [segChr, segStart, segEnd, segNo, segMean]=segment[-1]
           if(self.qType=="dup"):
             dupList=[]
-            for overlapAmps in list(self.dupTree[segChr].search(segStart, segEnd)):
+            for overlapAmps in list(self.dupTree[segChr].overlap(segStart, segEnd)):
               dupList.append(overlapAmps[-1])
             if(dupList!=[] and len(dupList)>=minAmpCntInRegion):
               dupList=sorted(dupList,key=attrgetter('inS'))
               UnifiedRegion[self.sample+"_"+self.gene+"_"+"dup"+":"+str(ID)]=dupList  
           if(self.qType=="del"):
             delList=[]
-            for overlapAmps in list(self.delTree[segChr].search(segStart, segEnd)):
+            for overlapAmps in list(self.delTree[segChr].overlap(segStart, segEnd)):
               delList.append(overlapAmps[-1])
             if(delList!=[] and len(delList)>=minAmpCntInRegion):
               delList=sorted(delList,key=attrgetter('inS'))
