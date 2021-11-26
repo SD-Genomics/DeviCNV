@@ -260,7 +260,7 @@ def filterOutSmallCNVs(outVDic, sampleCNVDic):
           if(score1>=score2 and cnvType1==cnvType2 and sample1==sample2 and chr1==chr2 and start1<=start2 and end1>=end2):
             if (score1==score2 and cnvType1==cnvType2 and sample1==sample2 and chr1==chr2 and start1==start2 and end1==end2):
               if(idx1<idx2):
-		FalseIDList.append(ID2)
+                FalseIDList.append(ID2)
 
   outVsList=[]
   for ID in outVDic.keys():
